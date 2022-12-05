@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>dream.on</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="index.css">
+</head>
+<style>
+  *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #252839;
+}
+ul{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+ul li{
+  position: relative;
+  list-style: none;
+}
+ul li a{
+  position: relative;
+  font-size: 4em;
+  text-decoration: none;
+  line-height: 1em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255,255,255,0.5);
+}
+ul li a::before{
+  content: attr(data-text);
+  position: absolute;
+  color: var(--clr);
+  width: 0;
+  overflow: hidden;
+  transition: 1s;
+  border-right: 8px solid  var(--clr);
+  -webkit-text-stroke: 1px  var(--clr);
+}
+ul li a:hover::before{
+  width: 100%;
+  filter: drop-shadow(0 0 25px var(--clr));
+}
+
+
+</style>
+
+<body>
+  <ul>
+    <li style="--clr:#4286f4">
+      <a href="../index.html" data-text="&nbsp;RODAHIT">&nbsp;RODAHIT&nbsp;</a>
+    </li>
+    <li style="--clr:#00ade1">
+      <a href="https://www.facebook.com/rodahit.skf/" data-text="&nbsp;Facebook">&nbsp;facebook&nbsp;</a>
+    </li>
+    <li style="--clr:#ff6493">
+      <a href="https://www.instagram.com/rodahitskf/" data-text="&nbsp;Instagram">&nbsp;Instagram&nbsp;</a>
+    </li>
+    <li style="--clr:#ffdd1c">
+      <a href="https://www.linkedin.com/authwall?trk=gf&trkInfo=AQEFyuyoqDla9AAAAYTj1QO410-s4H9HyhI0Q390bNCFYxlHjQka4xOcsCDpbRspkhRa2lEC9GCAMinslNRj4bMxAyhRhb7rQr1zRneBL6wZkWUYABmvYM9W9_heUbjOaQWN5u4=&original_referer=https://www.google.cl/&sessionRedirect=https%3A%2F%2Fcl.linkedin.com%2Fcompany%2Frodahit" data-text="&nbsp;Linkedin">&nbsp;linkedin&nbsp;</a>
+    </li>
+    
+    <!-- <li style="--clr:#00dc82">
+      <a href="#" data-text="&nbsp;Equipo">&nbsp;Equipo&nbsp;</a>
+    </li>
+    <li style="--clr:#dc00d4">
+      <a href="#" data-text="&nbsp;Contacto">&nbsp;Contacto&nbsp;</a>
+    </li> -->
+  </ul>
+  <script>
+  </script>
+</body>
+
+</html>
